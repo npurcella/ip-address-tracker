@@ -1,0 +1,90 @@
+body {
+    color: $veryDarkGrey;
+    font-family: $fontFamily;
+    text-align: center;
+}
+.header {
+    background-image: url(../images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    padding-top: 2rem;
+    .header-title {
+        color: $white;
+        letter-spacing: 0.09rem;
+        font-weight: $fontBold;
+        font-size: 1.5rem;
+        margin-bottom: 0.75em;
+    }
+    .form {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        .ip-input {
+            width: calc(80vw - 40px);
+            height: 40px;
+            border: none;
+            border-radius: 12px 0 0 12px;
+            padding: 10px;
+            margin-bottom: 0;
+        }
+        .ip-input:focus {
+            border: 2px solid hotpink;
+        }
+        .submit-btn {
+            background: #000;
+            background-image: url(../images/icon-arrow.svg);
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-position: center center;
+            height: 40px;
+            width: 40px;
+            margin: 0 0 0 -5px;
+            border: none;
+            border-radius: 0 12px 12px 0;
+        }
+    }
+}
+.current-ip-results {
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    background: $white;
+    border-radius: 12px;
+    margin: 1.5rem auto 0;
+    padding: 1rem;
+    width: 80vw;
+    .ip-address-label,
+    .location-label,
+    .timezone-label,
+    .isp-label {
+        color: $darkGrey;
+        font-size: 0.65rem;
+        font-weight: $fontLight;
+        text-transform: uppercase;
+        display: block;
+    }
+    #ip-address,
+    #location,
+    #timezone,
+    #isp {
+        font-size: 1rem;
+        font-weight: $fontBold;
+        margin: 0 auto 10px;
+    }
+}
+#map {
+    //     background: hotpink;
+    height: 60vh;
+    z-index: -1;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

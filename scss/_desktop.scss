@@ -1,0 +1,41 @@
+.header {
+    height: 25vh;
+    .form {
+        .ip-input {
+            width: 400px;
+        }
+    }
+}
+.current-ip-results {
+    display: inline-block;
+    width: 75vw;
+    min-height: 125px;
+    text-align: left;
+    //     overflow-wrap: break-word;
+    //     justify-content: space-between;
+    column-count: 4;
+    column-rule: 1px solid $darkGrey;
+    .result-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ip-address-label,
+    .location-label,
+    .timezone-label,
+    .isp-label {
+        margin-bottom: 1rem;
+    }
+    #ip-address,
+    #location,
+    #timezone,
+    #isp {
+        margin: 0;
+    }
+    //     .ip-address-label,
+    //     .location-label,
+    //     .timezone-label,
+    //     .isp-label {
+    //         margin-bottom: 2rem;
+    //     }
+}
